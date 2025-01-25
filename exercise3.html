@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .card {
+            margin: 10px;
+            padding: 10px;
+            position: relative;
+            top: 10vh;
+            left: 35vw;
+            border: 2px solid rgba(128, 128, 128, 0.345);
+            border-radius: 15px;
+            height: 35vmax;
+            width: 24vmax;
+            background-color: lightcyan;
+        }
+
+        .card-img {
+            width: 100%;
+            border-radius: 15px;
+
+        }
+
+        .capsules {
+            display: flex;
+            margin: 1%;
+        }
+
+        .capsule {
+            margin: 2%;
+            padding: 2%;
+            border: 1px solid rgba(128, 128, 128, 0.345);
+            border-radius: 60px;
+            color: gray;
+            background-color: white;
+        }
+
+        .card-content {
+            margin: 1%;
+            padding: 1%;
+            color: rgba(0, 0, 0, 0.848);
+            font-size: 1.2em;
+            width: 50%;
+            height: 8%;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .garbage {
+            margin: 1%;
+            color: rgba(0, 0, 0, 0.596);
+            font-size: 1em;
+            width: 100%;
+            height: 50%;
+            overflow: auto;
+            font-family: "Times New Roman", Times, serif;
+        }
+        .card-footer{
+            text-align: center;
+        }
+        .button{
+            margin: 3%;
+            padding: 3%;
+            width: 40%;
+            font-size: 1em;
+            border: 1px solid rgba(128, 128, 128, 0.345);
+            border-radius: 60px;
+            background-color: lightgoldenrodyellow;
+            color: rgb(44, 127, 190);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div>
+            <img src="https://t4.ftcdn.net/jpg/09/60/92/23/360_F_960922325_QzztzikqyeSwlAlqPWy6FcK7i94bWkvn.jpg"
+                alt="img" class="card-img">
+        </div>
+        <div class="capsules">
+            <span class="capsule">Nature</span>
+            <span class="capsule">Sunset</span>
+        </div>
+        <div class="card-content">
+            <h2>Mount Everest</h2>
+        </div>
+        <div>
+            <p class="garbage">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam eveniet quos esse quae laborum eos quo,
+                rem asperiores quod odit repellat excepturi maxime aperiam dolorem vero! Error, laboriosam repellendus
+                placeat ratione, porro autem itaque dolore corrupti harum tempore, optio nesciunt quisquam deserunt
+                velit enim qui dolores maxime ducimus rerum earum molestias? Deleniti aspernatur quis dolorem.
+            </p>
+        </div>
+        <div class="card-footer">
+            <button class="button">Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
