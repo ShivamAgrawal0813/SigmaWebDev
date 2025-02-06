@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        :root{
+            --primary-color: #bb8fce;
+            --secondary-color: #e8bff9;
+            --tertiary-color: #deb4de;
+            --text-color: #f7f9f9;
+            --default-font-size: 1.25em;
+            --default-content-size: 2.25em;
+            --def-border: 2px solid black;
+            --def-padding: 2.5vw;
+            --def-margin: 2.5vh;
+            --def-radius: 5vh;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            position: sticky;
+            top: 0;
+        }
+        nav ul{
+            display: flex;
+            background-color: var(--primary-color);
+        }
+        nav ul li{
+            list-style: none;
+            padding: var(--def-padding);
+            cursor: pointer;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: var(--default-font-size);
+        }
+        nav ul li:hover{
+            background-color: var(--secondary-color);
+        }
+
+        main{
+            height: 100vh;
+            /* width: 100vw; */
+            /* border: var(--def-border); */
+            background-color: var(--secondary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box{
+            /* border: var(--def-border); */
+            height: 80vh;
+            width: 30vw;
+            background-color: var(--primary-color);
+            margin: var(--def-margin);
+        }
+        .content{
+            /* border: var(--def-border); */
+            height: 20vh;
+            background-color: var(--tertiary-color);
+            width: 80vw;
+            margin: var(--def-margin) auto;
+            border-radius: var(--def-radius);
+            text-align: center;
+            padding: var(--def-padding);
+            font-size: var(--default-content-size);
+            /* line-height: 25vh; */
+            color: var(--text-color);
+            line-height: 1.25;
+            font-weight: bold;
+            /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
+        }
+        .icon{
+            position: fixed;
+            bottom: 0;
+            right:  0;
+        }
+        footer{
+            height: 10vh;
+            background-color: var(--primary-color);
+            ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Products</a></li>
+                <li><a href="/">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </main>
+    <div class="content">
+        <p>Welcome to sigma web development express</p>
+    </div>
+    <div class="icon">
+        <img src="img.svg" alt="img">
+    </div>
+    <footer>
+
+    </footer>
+</body>
+</html>
