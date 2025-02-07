@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header nav{
+            height: 12vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .logo img{
+            width: 12vw;
+        }
+        .right ul{
+            display: flex;
+            gap: 1.5vw;
+            align-items: center;
+            justify-content: center;
+        }
+        .right ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .right ul li span{
+            padding: 2px;
+        }
+        .right ul li span a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.753);
+            font-size: 1rem;
+        }
+        .search{
+            width: 2vw;
+        }
+
+        .content {
+            margin: 5vh 15vw;
+            /* border: 2px solid black; */
+            height: 30vh;
+            padding: 5vh;
+            width: 70vw;
+
+        }
+
+        .first-line {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5vh;
+        }
+
+        .first-line p,
+        h1 {
+            font-size: 3rem;
+            color: rgba(0, 0, 0, 0.899);
+        }
+
+        .second-line {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+
+        .second-line p {
+            font-size: 1.6rem;
+            color: rgba(0, 0, 0, 0.882);
+            margin: auto;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 4vh;
+        }
+        button{
+            background-color: rgb(24, 182, 196);
+            padding: 1.1vw;
+            color: white;
+            font-weight: bold;
+            border-radius: 7px;
+            border: none;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image copy.png" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li><span><a href="#">Products</a></span><span><img src="icons8-down-arrow-24.png" alt=""></span></li>
+                    <li><span><a href="#">For Business</a></span><span><img src="icons8-down-arrow-24.png" alt=""></span></li>
+                    <li><span><a href="#">Resources</a></span><span><img src="icons8-down-arrow-24.png" alt=""></span></li>
+                    <li><span><a href="#">Support</a></span><span><img src="icons8-down-arrow-24.png" alt=""></span></li>
+                    <li><span><a href="#">Our Company</a></span><span><img src="icons8-down-arrow-24.png" alt=""></span></li>
+                    <li><img class="Lang" src="Lang.png" alt="chat"></li>
+                    <li><img class="search" src="image.png" alt="search"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="first-line">
+            <p>Download&nbsp</p>
+            <h1>UltraEdit&nbsp </h1>
+            <p> for Windows&nbsp&nbsp</p>
+            <img src="Screenshot 2025-02-07 195620.png" alt="img" height="40vh">
+        </div>
+        <div class="second-line">
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows</p>
+            <p> version of the text editor.</p>
+        </div>
+        <div class="button">
+            <button>DOWNLOAD MAC OR LINUX VERSION</button>
+        </div>
+</body>
+</html>
