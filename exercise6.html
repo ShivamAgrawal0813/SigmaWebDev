@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 6</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            height: 12vh;
+        }
+
+        header nav ul {
+            display: flex;
+            align-items: center;
+            margin: 2.5vh 0 2.5vh 10vw;
+            gap: 1.75vw;
+        }
+
+        header nav ul li {
+            list-style: none;
+        }
+
+        header nav ul li a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.753);
+            font-size: 1.05rem;
+
+        }
+
+        .logo-container {
+            width: 43vw;
+        }
+
+        .logo {
+            width: 12vw;
+        }
+
+        .content {
+            margin: 5vh 15vw;
+            /* border: 2px solid black; */
+            height: 30vh;
+            padding: 5vh;
+            width: 70vw;
+
+        }
+
+        .first-line {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 5vh;
+        }
+
+        .first-line p,
+        h1 {
+            font-size: 3rem;
+            color: rgba(0, 0, 0, 0.899);
+        }
+
+        .second-line {
+            display: flex;
+            justify-content: center;
+            flex-flow: row wrap;
+        }
+
+        .second-line p {
+            font-size: 1.6rem;
+            color: rgba(0, 0, 0, 0.882);
+            margin: auto;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            margin-top: 4vh;
+        }
+        button{
+            background-color: rgb(24, 182, 196);
+            padding: 1vw;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <div class="logo-container">
+                        <img class="logo" src="UltraEdit-Logo-Legal-New.svg" alt="logo">
+                    </div>
+                </li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">For Business</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Our Company</a></li>
+                <li><img class="Eng" src="Screenshot 2025-02-07 183741.png" alt="English"></li>
+                <li><img src="image.png" alt="Search" height="25vh"></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="first-line">
+            <p>Download&nbsp</p>
+            <h1>UltraEdit&nbsp </h1>
+            <p> for Windows&nbsp&nbsp</p>
+            <img src="Screenshot 2025-02-07 195620.png" alt="img" height="40vh">
+        </div>
+        <div class="second-line">
+            <p>Download and try UltraEdit before you buy it! This download includes the full Windows</p>
+            <p> version of the text editor.</p>
+        </div>
+        <div class="button">
+            <button>DOWNLOAD MAC OR LINUX VERSION</button>
+        </div>
+    </div>
+</body>
+
+</html>
