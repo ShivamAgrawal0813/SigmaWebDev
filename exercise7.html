@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 7</title>
+    <style>
+
+        @media screen and (max-width: 980px) {
+            header nav{
+                justify-content: space-between;
+            }
+            .right ul li span{
+                display: none;
+            }
+            .Lang{
+                display: none;
+            }
+            .Search{
+                margin-right: 1vw;
+            }
+            .Hamburger{
+                visibility: visible;
+            }
+            .box button{
+                font-size: 0.5em;
+            }
+            .strong{
+                font-size: 0.8em;
+            }
+            .language{
+                font-size: 0.6em;
+                margin-bottom: 0.25vw;
+            }
+        }
+        @media screen and (min-width: 980px) {
+            .Hamburger{
+                display: none;
+            }    
+            .box button{
+                font-size: 1em;
+            }
+            .strong{
+                font-size: 1.25em;
+                margin-bottom: 1vw;
+            }
+            .language{
+                font-size: 1em;
+                margin-bottom: 1vw;
+            }
+            .hash{
+                font-size: 0.75em;
+                margin-top: 1vw;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .box-container{
+                grid-template-columns: 1fr;
+                gap: 2vh;
+            }
+            .box{
+                width: 50vw;
+                height: 15vh;
+                align-items: center;
+            }
+            .hash-code{
+                width: 30vw;
+            }
+            .box button{
+                width: 30vw;
+                height: 2vh;
+            }
+        }
+
+        @media screen and (min-width: 600px) {
+            .container{
+                height: 60vh;
+            }
+            .box-container{
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 2vw;
+            }
+            .box{
+                width: 20vw;
+                height: 30vh;
+            }
+            .hash-code{
+                width: 10vw;
+            }
+            .box button{
+                width: 10vw;
+                height: 5vh;
+            }
+            
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header nav{
+            height: 15vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo img{
+            height: 7vh;
+        }
+        .right ul{
+            display: flex;
+            align-items: center;
+            gap: 1.5vw;
+        }
+        .right ul li{
+            list-style: none;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+        .right ul li span a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.825);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .Search{
+            height: 3vh;
+        }
+        .Hamburger{
+            height: 3vh;
+        }
+        main{
+            margin: 10vh;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .box-container{
+            display: grid;
+        }
+        .box{
+            background-color: rgba(220, 220, 220, 0.304);
+            border-radius: 1vw;
+            padding: 1vw;
+        }
+        .strong{
+            display: flex;
+            justify-content: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(0, 0, 0, 0.851);
+            
+        }
+
+        .language{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(0, 0, 0, 0.651);
+
+        }
+        .box button{
+            padding: 0.1 1vw;
+            background-color: #5cb85c;
+            display: flex;
+            margin: auto;
+            border: none;
+            border-radius: 0.5vw;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box button a{
+            text-decoration: none;
+            color: white;
+        }
+        .hash{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: rgba(0, 0, 0, 0.937);
+            display: block;
+        }
+        .hash p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .hash p:last-child{
+            font-size: 0.3em;
+            margin: 1vh auto;
+            word-break: break-word;
+            text-align: center;
+            
+        }
+        .hash-code{           
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image copy.png" alt="logo">
+            </div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <span><a href="#">Products</a></span>
+                        <span><img src="icons8-down-arrow-24.png" alt="down-arrow"></span>
+                    </li>
+                    <li>
+                        <span><a href="#">For Business</a></span>
+                        <span><img src="icons8-down-arrow-24.png" alt="down-arrow"></span>
+                    </li>
+                    <li>
+                        <span><a href="#">Resources</a></span>
+                        <span><img src="icons8-down-arrow-24.png" alt="down-arrow"></span>
+                    </li>
+                    <li>
+                        <span><a href="#">Support</a></span>
+                        <span><img src="icons8-down-arrow-24.png" alt="down-arrow"></span>
+                    </li>
+                    <li>
+                        <span><a href="#">Our Company</a></span>
+                        <span><img src="icons8-down-arrow-24.png" alt="down-arrow"></span>
+                    </li>
+                    <li><img class="Lang" src="Lang.png" alt="Lang"></li>
+                    <li><img class="Search" src="image.png" alt="Search"></li>
+                    <li><img class="Hamburger" src="icons8-hamburger-50.png" alt="Hamburger"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="box-container">
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="strong"><strong>English</strong></div>
+                    <div class="language">English</div>
+                    <button><a href="ue_english_64.exe">Download 64-bit</a></button>
+                    <div class="hash">
+                        <p>SHA256</p>
+                        <div class="hash-code">
+                        <p>B06BC2BB50623A7B1A1C0C2D1C7A6BB5346515A9F5FF2CDE19A60EEE36DC702E</p>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
