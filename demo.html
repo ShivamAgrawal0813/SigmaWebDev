@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        
+        .card {
+            border: 2px solid gray;
+            height: 550px;
+            width: 380px;
+            border-radius: 20px;
+            margin: 10vh auto;
+            padding: 10px;
+            background-color: rgb(244, 200, 193);
+        }
+
+        .pic img {
+            border-radius: 15px;
+        }
+
+        .capsule{
+            border: 2px solid gainsboro;
+            border-radius: 20px;
+            padding: 7px 12px;
+            color: rgb(205, 190, 28);
+            font-weight: bold;
+            display: inline-block;
+            margin: 5px 3px;
+            background-color: rgb(249, 239, 237);
+            box-shadow: 2px 2px 5px gray inset;
+            cursor: pointer;
+        }
+        .card h1{
+            margin-left: 5px;
+            color: rgb(106, 68, 34);
+        }
+
+        .content p{
+            color:rgb(189, 127, 34);
+            
+        }
+        .button{
+            text-align: center;
+            margin: 20px;
+        }
+        .button button{
+            width: 120px;
+            padding: 13px;
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(214, 166, 160);
+            color: rgb(114, 98, 15);
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px gray inset;
+        }
+        .button button:hover{
+            box-shadow: 2px 2px 5px gray ;
+            font-size: 15px;
+            background-color: rgb(223, 169, 162);
+            /* color: rgb(186, 159, 19); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="pic">
+            <img src="https://t4.ftcdn.net/jpg/09/60/92/23/360_F_960922325_QzztzikqyeSwlAlqPWy6FcK7i94bWkvn.jpg"
+                alt="img" width="380">
+        </div>
+        <div class="capsules">
+            <span class="capsule">Nature</span>
+            <span class="capsule">Sunset</span>
+            <span class="capsule">Everest</span>
+        </div>
+        <h1>Mount Everest</h1>
+        <div class="content">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio illum ea quo iure similique error reiciendis exercitationem repellat, quos saepe architecto ut nesciunt ex eaque, necessitatibus assumenda? Quod perspiciatis sunt mollitia quaerat voluptas. Facilis dolorem, nihil recusandae quos assumenda optio sit, ipsam temporibus aliquam neque atque</p>
+        </div>
+        <div class="button">
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+
+</html>
