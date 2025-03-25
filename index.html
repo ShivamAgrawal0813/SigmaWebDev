@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg_color: rgb(19, 19, 59);
+            --color: rgb(227, 193, 147);
+            --nav_hov_color: rgb(21, 21, 137);
+            --box1_bg_color: blueviolet; 
+            --box2_bg_color: plum;
+            --ad_color: purple;
+        }
+        .nav{
+            background-color: var(--bg_color);
+            position: sticky;
+            top: 0;
+        }
+        .nav ul{
+            display: flex;
+            align-items: center;
+            padding: 5vh 3vw;
+            gap: 0px 5vw;
+            list-style: none;
+        }
+
+        .nav ul li a{
+            color: var(--color);
+            text-decoration: none;
+            font-size: 1.25em;
+            font-weight: bold;
+            cursor: pointer;
+
+        }
+        .nav ul li:hover{
+            background-color: var(--nav_hov_color);
+            text-decoration: underline white;
+        }
+
+        .main{
+            margin: 5vh 5vw;
+            background-color: var(--bg_color);
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 10vh 5vw;
+            gap: 5vw;
+        }
+        .box{
+            height: 55vh;
+            width: 30vw;
+        }
+
+        .box1{
+            background-color: var(--box1_bg_color);
+        }
+
+        .box2{
+            background-color: var(--box2_bg_color)
+        }
+
+        .section{
+            margin: 10vh auto;
+            height: 20vh;
+            width: 60vw;
+            background-color: var(--bg_color);
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--color);
+            font-size: 1.25em;
+        }
+        
+        .footer{
+            height: 10vh;
+            background-color: var(--bg_color);
+        }
+        .ad{
+            position: fixed;
+            bottom: 2vmin;
+            right: 2vmin;
+            background-color: var(--ad_color);
+            height: 7vmax;
+            width: 7vmax;
+            border-radius: 5vmax;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">Booking</a></li>
+            <li><a href="/">Community</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+    </div>
+
+    <div class="section">
+        <h2>
+            Welcome to this Sigma Web Development Express
+        </h2>
+    </div>
+
+    <div class="footer"></div>
+
+    <div class="ad">
+    </div>
+
+</body>
+</html>
