@@ -4,12 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+            gap: 20px;
+            background-color: rgba(0, 0, 0, 0.925);
+            padding: 20px;
+        }
+        .img{
+            position: relative;
+            height: 150px;
+        }
+        .img img{
+            border-radius: 10px;
+        }
+        .text{
+            position: sticky;
+            color: white;
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+        }
+        .content{
+            position: relative;
+            z-index: 1;
+            color: white;
+        }
+        .content ul{
+            display: flex;
+            list-style: none;
+            gap: 0 10px;
+            position: absolute ;
+            left: -40px;
+        }
+    </style>
 </head>
 <body>
-    <div class="box">
-        This is a box.
+    <div class="container">
+        <div class="img">
+            <img src="https://i.ytimg.com/vi/KB7GzBv5p4Q/hqdefault.jpg?s…AIYBjgBQAE=&rs=AOn4CLDHpDiAzX3RJIFqB-cFW-sRYzUfGQ" alt="thumbnail" height="150px">
+            <div class="text">
+                31:20
+            </div>
+        </div>
+        <div class="content">
+            <h5>JavaScript Exercise 13 - Dynamic Website Builder | Sigma Web Development Course - Tutorial #73</h5>
+            <ul>
+                <li>CodeWithHarry</li>
+                <li>727K Views</li>
+                <li>2 months ago</li>
+            </ul>
+        </div>
+
     </div>
-    <button>Click Me</button>
-    <script src="exercise11.js"></script>
+    <script src="exercise13.js"></script>
 </body>
 </html>
