@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 14</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+        }
+        div{
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script>
+
+        const context = ["Initialising Hacking","Reading your files","Password files detected","Sending all passwords and personal files to server","Cleaning up"]
+
+        function randomDelay() {
+            let n = 1 + Math.random() * 6;
+            return new Promise((resolve,reject)=>{
+                setTimeout(() => {
+                    resolve()
+                }, n*1000);
+            })
+        }
+
+        async function addItem(item){
+            await randomDelay()
+            let div = document.createElement("div")
+            div.innerHTML += item
+            document.body.append(div);
+        }        
+
+        let t = setInterval(() => {
+            let last = document.getElementsByTagName("div")
+            last = last[last.length-1]
+            if(last.innerHTML.endsWith("...")){
+                last.innerHTML = last.innerHTML.slice(0,last.innerHTML.length-3)
+            }else{
+                last.innerHTML += "."
+            }
+        }, 300);
+        
+        async function main(){
+
+            
+            for (const text of context) {
+                await addItem(text)
+            }
+
+            await randomDelay()
+
+            clearInterval(t)
+
+        }
+
+        main()
+
+
+
+    </script>
+</body>
+
+</html>
