@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise8</title>
+    <style>
+        .box{
+            height: 80px;
+            width: 80px;
+            background-color: red;
+            position: absolute;
+            bottom: 0;
+            border-radius: 40px;
+            animation: bounceX 3s linear infinite, bounceY 1s ease-out alternate infinite;
+        }
+        .container{
+            height: 80vh;
+            background-color: blue;
+            width: 80vw;
+            position: relative;
+        }
+
+        @keyframes bounceX {
+            from{
+                left: 0;
+            }
+            to{
+                left: 100%;
+            }   
+        }
+        @keyframes bounceY{
+            from{
+                bottom: 0;
+            }
+            to{
+                bottom: 100%;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>
